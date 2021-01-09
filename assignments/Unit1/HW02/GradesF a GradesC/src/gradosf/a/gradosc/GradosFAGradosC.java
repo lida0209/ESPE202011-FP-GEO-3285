@@ -44,6 +44,7 @@ public class GradosFAGradosC {
         divider = 9;
         // (multiplaying * multiplier) / 9 = 35
                 
+        
         //Operation
         Celsius = (short) ((short) dividend / divider);
         

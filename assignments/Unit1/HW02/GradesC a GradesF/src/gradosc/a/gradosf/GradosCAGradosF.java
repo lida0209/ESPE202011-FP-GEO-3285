@@ -26,6 +26,7 @@ public class GradosCAGradosF {
         int divider;
        
         
+        
         int fahrenheit;
         int addend1;       
         int addend2;
