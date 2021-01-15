@@ -50,6 +50,7 @@ public class WS05Interations {
         for (int j = 1 ; j <=top; j++){
             product = table *j;
             System.out.println(" 7 * " + j + " = " + product);
+            
         }
         
     }
