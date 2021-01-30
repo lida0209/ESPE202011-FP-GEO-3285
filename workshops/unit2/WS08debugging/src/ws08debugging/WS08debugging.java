@@ -21,7 +21,7 @@ public class WS08debugging {
         int multiplicand = 0;
         int multiplier = 1;
         int product;
-        int stop = 12;
+        int stop = 13;
 
         product = 0;
 
