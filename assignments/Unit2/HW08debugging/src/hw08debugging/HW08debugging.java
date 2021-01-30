@@ -23,6 +23,7 @@ public class HW08debugging {
         int num ;
         
         
+        
         do {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number: ");
