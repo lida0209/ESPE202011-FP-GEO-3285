@@ -20,7 +20,7 @@ public class HW08debugging {
         // TODO code application logic here
     
         int factorial=1;
-        int num =15 ;
+        int num ;
         
         
         do {
