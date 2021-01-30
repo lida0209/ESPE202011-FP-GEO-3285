@@ -36,7 +36,7 @@ public class HW08debugging {
 
         factorial = 1;
       } while (num <15 );
-              
+            System.out.println( " num -> " + (num <15));  
 
         System.out.println("Good bye");
 
