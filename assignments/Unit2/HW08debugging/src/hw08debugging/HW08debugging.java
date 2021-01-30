@@ -34,7 +34,7 @@ public class HW08debugging {
         System.out.println("The factorial of " + num + " is: " + factorial);
 
         factorial = 1;
-      } while (num <=15);
+      } while (num <15 );
               
 
         System.out.println("Good bye");
