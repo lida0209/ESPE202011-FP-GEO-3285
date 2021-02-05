@@ -16,7 +16,6 @@ public class WS10Functions {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
        int divd = 5;
         int divr = 10;
         float quotient = 0;
@@ -70,3 +69,5 @@ public class WS10Functions {
     }
 
 }
+
+      
