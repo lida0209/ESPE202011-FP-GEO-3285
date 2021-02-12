@@ -41,7 +41,7 @@ public class HW12_Libraries {
        System.out.println("Total: " + total);
        
       //Currency outflow tax
-       
+       345
        float amount = 0.0F;
        final float limitquantity = 1200.0F;
        float remaining;
@@ -235,18 +235,18 @@ public class HW12_Libraries {
        }
        public static float Incometax (float baseimp, float basicfraction, float surplusfraction, float tax1 ){
             float value1 = 0.0F;
-            for (int i = 11212; i <= (int) baseimp; ) {
+            
             
                    value1 = ((((float) baseimp - (float) basicfraction))* (float)surplusfraction)+ (float)tax1 ;
-            }
+            
                    return value1;
         }
        public static float Incometax2 (float baseimp2, float basicfraction2, float surplusfraction2, float tax2 ){
             float value2 = 0.0F;
-            for (int i = 14285; i <= (int) baseimp2; ) {
+           
             
                    value2 = ((((float) baseimp2 - (float) basicfraction2))* (float)surplusfraction2)+ (float)tax2 ;
-            }
+            
                    return value2;
         }
        public static float Incometax3 (float baseimp3, float basicfraction3, float surplusfraction3, float tax3 ){
