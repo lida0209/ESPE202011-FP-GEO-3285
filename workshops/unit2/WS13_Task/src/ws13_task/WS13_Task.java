@@ -19,6 +19,23 @@ public class WS13_Task {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+         boolean mainLoop = true;
+        int option;
+        
+        do {
+            System.out.println(" ========= Formulas =======");
+            System.out.println("1. -> The circle area");
+            System.out.println("2. -> The trapeze area");
+            System.out.println("3. -> The triangle area");
+            System.out.println("4. -> The freefall maximum height");
+            System.out.println("5. -> The speed");
+            System.out.println("6. -> The acceleration");
+            System.out.println("7. -> Exit");
+        System.out.println("Enter your menu option --> ");
+            option = input.nextInt();
+            
+            switch (option) {
+        case 1:
         //circle area
         float radio = 0.0F;
         final float PI = 3.14159F;
@@ -28,11 +45,14 @@ public class WS13_Task {
         área = circlearea(radio,PI,exponent);
         
         System.out.println("The circle area  is");
-                    System.out.println("enter radio -> ");
-                    radio = input.nextInt();
+        System.out.println("enter radio -> ");
+        radio = input.nextInt();
                     
-                     área = PI * (float)Math.pow(radio,exponent);
-                    System.out.println(" área --> " + área);
+        área = PI * (float)Math.pow(radio,exponent);
+        System.out.println(" área --> " + área);
+         break;
+                    
+        case 2:           
          //trapeze area
          
          float Base = 0.0F;
@@ -54,6 +74,8 @@ public class WS13_Task {
                     
                     área1 = ((Base + base)/2)* height;
                     System.out.println(" área1 --> " + área1);
+         break;
+        case 3:            
         // triangle area
         
         float base1 = 0.0F;
@@ -71,6 +93,8 @@ public class WS13_Task {
                     área2 = (base1 * height1)/2;
                     
                     System.out.println(" área2 --> " + área2);
+         break;
+                case 4:            
        //freefall maximum height
        
        float Voy = 0.0F;
@@ -82,8 +106,10 @@ public class WS13_Task {
         System.out.println("enter Voy -> ");
                     Voy = input.nextInt(); 
                      
-                    hmax = ((float)Math.pow(radio,exponent))/ (grav)*2;
+                    hmax = ((float)Math.pow(Voy,exp))/ (grav)*2;
                     System.out.println(" hmax --> " + hmax);
+         break;
+                case 5:            
         //speed
         
         float distance = 0.0F;
@@ -100,6 +126,8 @@ public class WS13_Task {
          
          speed = distance / time;
          System.out.println(" speed --> " + speed);
+          break;
+                case 6:
          
         //acceleration
         
@@ -115,11 +143,12 @@ public class WS13_Task {
          System.out.println("enter time -> ");
          time1 = input.nextInt();
          
-         acceleration = sleep1 / time;
+         acceleration = sleep1 / time1;
          System.out.println(" accelaration --> " + acceleration);        
-                 
-         
-         
+        break;
+        
+            } 
+            } while (option != 7);
     }
      public static float circlearea(float radio, float PI, float exponent ) {
                 float área = 0.0F;
@@ -143,10 +172,10 @@ public class WS13_Task {
                 return área2;      
                 
      }
-     public static float maximumheight  (float Voy, float exponent, float grav) {
+     public static float maximumheight  (float Voy, float exp, float grav) {
          float hmax = 0.0F;
          
-         hmax = (Voy * exponent)/ grav *2;
+         hmax = (Voy * exp)/ grav *2;
         return hmax;
         
       }
