@@ -54,8 +54,30 @@ public class Quiz1 {
         for (int i = 0; i < averageGrades.length ; i++) {
             System.out.println("Average of students " + (i + 1) + " -> " + averageGrades[i]);
         }
-       
-      
+        int studentAverage1 = 0;
+        String[] students1;
+        float[] gradesAverages;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the name of students from the average grades -> ");
+        studentAverage1 = scanner.nextInt();
+        
+        students1 = new String [studentAverage1];
+        gradesAverages = new float [studentAverage1];
+        
+        for (int i=0; i< studentAverage1;i++){
+            scanner.nextLine();
+            System.out.print("Enter the name of student " +i +"->");
+            students1[i] = scanner.nextLine();
+            System.out.print("Enter " + students1[i]+ "grades Averages ->");
+            gradesAverages[i] = scanner.nextFloat();
+        }
+        
+        System.out.println("Student -> \t average grades ");
+        for (int i=0; i<studentAverage1; i++ ) {
+            System.out.println(students1[i]+ "-> \t" + gradesAverages[i] );
+        }
     }
     
 }
