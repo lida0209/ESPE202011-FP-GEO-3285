@@ -3,35 +3,46 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ws16bidimensionalarrays;
+package hw15_bidimesionalarrays;
+
+import java.util.Scanner;
 
 /**
  *
  * @author HP
  */
-public class WS16BidimensionalArrays {
+public class HW15_BidimesionalArrays {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int a[][] = {{5, 7, 9}, {9, 5, 8}, {3, 2, 4}};
-        int b[][] = {{8, 3, 5}, {-5, 4, -3}, {9, 10, 24}};
-
-        //    5    7     9           8     3     5       13    10    14
-        //    9    5     8     +    -5     4    -3   =    4     9     5
-        //    3    2     4           9    10    24       12    12    28
-        
+        Scanner input = new Scanner(System.in);
+        int a[][] = {{0,0,0},{0,0,0},{0,0,0}};
+        int b[][] = {{0,0,0},{0,0,0},{0,0,0}};
         int c[][] = new int[3][3];
-        
+            
+        for(int i = 0 ; i < 3 ; i++){
+        for (int j = 0 ; j < 3 ; j++) {    
+            System.out.print("Enter the matrix A  -> ");
+                a[i][j] = input.nextInt();
+        }
+        }
+        for(int i = 0 ; i < 3 ; i++){
+        for (int j = 0 ; j < 3 ; j++) {    
+            System.out.print("Enter the matrix B  -> ");
+                b[i][j] = input.nextInt();
+        }
+        }
         for(int i = 0 ; i < 3 ; i++){
             for (int j = 0 ; j < 3 ; j++) {
                 c[i][j] = a[i][j] + b[i][j];
             }
         }
-
-        System.out.println("The additon of matrix A -> ");
+                           
+                 
+        System.out.println("The substration of matrix A -> ");
         
         for(int i = 0 ; i < 3 ; i++){
             System.out.println("");
@@ -54,8 +65,9 @@ public class WS16BidimensionalArrays {
             for (int j = 0 ; j < 3 ; j++) {
                 System.out.print("\t " + c[i][j]);
             }
+            }
         }
-
+                 
     }
     
-}
+

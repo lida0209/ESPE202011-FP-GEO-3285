@@ -5,6 +5,8 @@
  */
 package ws15correction_q01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author HP
