@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ws17_matrixtransposition;
+package hw16matrixfuntion;
 
 import java.util.Scanner;
 
@@ -11,14 +11,14 @@ import java.util.Scanner;
  *
  * @author HP
  */
-public class WS17_MatrixTransposition {
+public class HW16MatrixFuntion {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        float [][] a;
+         float [][] a;
         float [][] b;
         float [][] t;
         float [][] c;
@@ -64,7 +64,7 @@ public class WS17_MatrixTransposition {
          System.out.println(" T");
          prettyPrintMatrix(m, n, t);
          
-         System.out.println("--The rest of matrices is--");
+         System.out.println("--The sum of matrices is--");
          
          c = addTwoMatrices(m, n, a, b);
           prettyPrintMatrix(m, n, c);
@@ -98,7 +98,7 @@ public class WS17_MatrixTransposition {
         
         for(int i=0; i< m; i++){
             for (int j=0; j< n; j++){
-                c[i][j] = a[i][j] - b[i][j];
+                c[i][j] = a[i][j] + b[i][j];
             }
         }
         return c;
@@ -168,8 +168,6 @@ public class WS17_MatrixTransposition {
         }
         System.out.println("");
         
-   
-    
     }
     
 }
