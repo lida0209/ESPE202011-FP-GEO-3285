@@ -24,6 +24,7 @@ public class WS16BidimensionalArrays {
         //    3    2     4           9    10    24       12    12    28
         
         int c[][] = new int[3][3];
+        System.out.println("AUTOR LIDA VEGAY");
         
         for(int i = 0 ; i < 3 ; i++){
             for (int j = 0 ; j < 3 ; j++) {

@@ -24,6 +24,9 @@ public class HW10Functions {
                     float divisor = 0;
                     float dividend = 0;
                     float quotient = 0;
+                    
+                  System.out.println("==Autor Lida Vegay==");
+                    
                     quotient = divideTwoNumbers(dividend, divisor);
                     
                     System.out.println("The division is");
