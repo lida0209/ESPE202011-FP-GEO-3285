@@ -44,3 +44,65 @@ public class BubbleSort {
     }
     
 }
+    Scanner input = new Scanner(System.in);
+        int [] numbers  = {0,0,0,0,0,0};
+        int temp = 0;
+        
+        for(int i = 0 ; i < 6 ; i++){
+            System.out.print("Enter the 6 numbers -> ");
+                numbers[i] = input.nextInt();
+        }
+        
+
+    for (int i = 0; i < numbers.length; i++) {
+        for (int j = 1; j < (numbers.length - i); j++) {
+            if (numbers[j - 1] > numbers[j]) {
+                temp = numbers[j - 1];
+                numbers[j - 1] = numbers[j];
+                numbers[j] = temp;
+            }
+        }
+    }
+    System.out.println(Arrays.toString(numbers));
+         }
+        
+    }
+for (int i=1; i < numbers.length; i++) {
+         int orderedNumbers = numbers[i];
+          int pos = i;
+         while ((pos > 0) && (numbers[pos - 1] > orderedNumbers)){
+              numbers[pos] = numbers[pos -1];
+              pos --;
+          }
+          numbers[pos]=orderedNumbers;
+      }
+    
+int [] numbers = new int [6];
+        for (int i= 0; i < numbers.length; i++){
+            numbers[i] = Integer.parseInt(JOptionPane.showInputDialog((i + 1)+ "Numbers"), 0);
+            
+        }
+        String Array = "Unorder numbers";
+        for (int i= 0; i < numbers.length; i++){
+            Array = Array + numbers[i] + "   ";
+            
+        }
+        printTheOrdenNumbers(numbers);
+         Array = Array + "Unorder numbers";
+         for (int i= 0; i < numbers.length; i++){
+              Array = Array + "Unorder numbers"+ numbers [i];
+              
+         }
+         JOptionPane.showMessageDialog(null, Array);
+         
+    }                                       
+           public static void printTheOrdenNumbers(int [] numbers){
+               for (int i=1; i < numbers.length; i++) {
+         int orderedNumbers = numbers[i];
+          int pos = i;
+         while ((pos > 0) && (numbers[pos - 1] > orderedNumbers)){
+              numbers[pos] = numbers[pos -1];
+              pos --;
+          }
+          numbers[pos]=orderedNumbers;
+      }
