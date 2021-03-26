@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.sorting.view;
 
+import ec.edu.espe.sorting.controller.Searcher;
 import ec.edu.espe.sorting.controller.Sorting;
 import javax.swing.JOptionPane;
 
@@ -183,7 +184,31 @@ public class FromSortingIntegers extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
-int[] integers;
+        int index;
+        Searcher searcher =  new Searcher();
+        int[] integers;
+        int dataToFind;
+        
+        integers= new int[6];
+        
+        dataToFind = Integer.parseInt(txtNumberToSearch.getText());
+        
+        readIntegersToArray(integers);
+        index = searcher.findInteger(integers, dataToFind);
+        
+        if(index == -1){
+            JOptionPane.showMessageDialog(null, dataToFind + "is NOT found","Searching",JOptionPane.ERROR_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, dataToFind + "is found");
+        }
+        
+        
+        
+        
+    }//GEN-LAST:event_btnSearchActionPerformed
+
+    private void btnSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSortActionPerformed
+    int[] integers;
         int[] sortedIntegers;
         integers = new int[6];
         sortedIntegers = new int[6];
@@ -213,28 +238,6 @@ int[] integers;
         integers[4] = Integer.parseInt(txtInteger5.getText());
         integers[5] = Integer.parseInt(txtInteger6.getText());
     
-    }//GEN-LAST:event_btnSearchActionPerformed
-
-    private void btnSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSortActionPerformed
-    int index;
-        Searcher searcher =  new Searcher();
-        int[] integers;
-        int dataToFind;
-        
-        integers= new int[6];
-        
-        dataToFind = Integer.parseInt(txtNumberToSearch.getText());
-        
-        readIntegersToArray(integers);
-        index = searcher.findInteger(integers, dataToFind);
-        
-        if(index == -1){
-            JOptionPane.showMessageDialog(null, dataToFind + "is NOT found","Searching",JOptionPane.ERROR_MESSAGE);
-        } else {
-            JOptionPane.showMessageDialog(null, dataToFind + "is found");
-        }
-        
-        
         
     }//GEN-LAST:event_btnSortActionPerformed
 

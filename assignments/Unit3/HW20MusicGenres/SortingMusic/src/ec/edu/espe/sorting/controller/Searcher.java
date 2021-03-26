@@ -10,16 +10,15 @@ package ec.edu.espe.sorting.controller;
  * @author HP
  */
 public class Searcher {
-    public int findInteger(int[] elements, int x) {
+
+    public static int findMusic(String[] elements, String x) {
         int i;
         int n = elements.length;
         for (i = 0; i < n; i++) {
-            if (elements[i] == x) {
+            if (elements[i] == null ? x == null : elements[i].equals(x)) {
                 return i;
             }
         }
         return -1;
     }
-    
 }
- 
