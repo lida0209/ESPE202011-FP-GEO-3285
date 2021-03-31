@@ -1,0 +1,9 @@
+
+Nick,26,176.5,lalala,3,true
+Ana,56,165.4,Alegria,2,false
+Ana,56,165.4,Alegria,2,false
+Miley Cyrus,28,170.0,Wreaking Ball,3,false
+Miley Cyrus,28,170.0,Wreaking Ball,2,false
+Joe,27,180.0,JAJAJA,2,true
+Ana,27,180.0,aSDDF,2,false
+rtr,5,123.0,ggf,4,true
